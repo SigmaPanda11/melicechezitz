@@ -89,8 +89,10 @@ const levels = [
     // level 11 which is impossible to fail rn lmao
     [
         { type: 'experimental' },
+        { type: 'grass', x: 1400, y: window.innerHeight - grassHeight, width: 20, height: (grassHeight + 100) },
         { type: 'block', x: 400, y: window.innerHeight - grassHeight, width: 60, height: 20 },
         { type: 'expiramental-photo', x: 900, y: window.innerHeight - grassHeight - obstacleHeight, width: 100, height: 100 },
+        { type: 'grass', x: 1400, y: window.innerHeight - grassHeight, width: 40, height: (grassHeight + 10) },
     ],
     // level 12 which introduces moving grass that is horribly bugged currently, hence the setting option
     [
@@ -101,9 +103,13 @@ const levels = [
     [
         { type: 'experimental' },
         { type: 'blue-potion', x: 900, y: window.innerHeight - grassHeight - obstacleHeight, width: 100, height: 100 },
+        { type: 'grass', x: 1000, y: window.innerHeight - grassHeight, width: 50, height: (grassHeight + 30) },
     ],
     // level 14 which soley exists to show how to import levels from other files if you want to
     level14,
+    [
+         { type: 'grass', x: 1400, y: window.innerHeight - grassHeight, width: 40, height: (grassHeight + 10) },
+    ]
     /* example block usage:
     [
         { type: 'block', x: 800, y: window.innerHeight - grassHeight, width: 60, height: 20 },
